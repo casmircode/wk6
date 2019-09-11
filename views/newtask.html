@@ -1,0 +1,40 @@
+<html>
+        <head>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+    <body>
+            <div class='tasks'>
+            <img src='dp.png'>
+            <div class='task-bd'>
+            <h2>New Task</h2>
+            <div class='form'>
+
+
+
+        <form action="/newtask.html" method="POST" >
+            TaskName<br><input type='text' name='taskName'><br/>
+            TaskAssign<br><input type='text' name='taskAssign'><br/>
+            DueDate<br><input type='date' name='dueDate'>
+            <p>   </p>
+            TaskStatus<select name='taskStatus'>
+                <option value="null">----------</option>
+                <option value="InProgress">InProgress</option>
+                <option value="Complete">Complete</option>
+            </select>
+            <p>   </p>
+            
+
+        TaskDescription<br><input type='text' name='taskDescription'><br/>
+            <button>Submit</button>
+        </form>
+
+
+            <h3> <a href="/">Home</a> </h3>
+            <h3> <a href="gettask.html">Get Task</a> </h3>
+            <h3> <a href="updatetask.html">Update Task</a> </h3>
+            <h3> <a href="deletetask.html">Delete Task</a> </h3>
+            <h3> <a href="deleteall.html">Delete All Completed Task</a> </h3>
+            </div>
+            </div>
+    </body>
+</html>

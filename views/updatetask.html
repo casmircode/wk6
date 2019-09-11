@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class='tasks'>
+            <img src='dp.png'>
+            <div class= 'task-bd'>
+                <h2>Update Task</h2>    
+                <div class='form'>
+
+                    <form action="/updatetask.html" method="POST">
+                        TaskID <input type="text" name="id">
+                            <p>   </p>
+                        New Status<select name='newStatus'>
+                            <option value="null">----------</option>
+                            <option value="InProgress">InProgress</option>
+                            <option value="Complete">Complete</option>
+                        </select>
+                        <br>
+                        <button>Update</button>
+                    </form>
+
+                    <h3> <a href="/">Home</a> </h3>
+                    <h3> <a href="newtask.html">New Task</a> </h3>
+                    <h3> <a href="gettask.html">Get Task</a> </h3>
+                    <h3> <a href="deletetask.html">Delete Task</a> </h3>
+                    <h3> <a href="deleteall.html">Delete All Completed Task</a> </h3>
+        
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

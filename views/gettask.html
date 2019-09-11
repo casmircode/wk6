@@ -1,0 +1,71 @@
+
+<html>
+
+        <head>
+          <link rel="stylesheet" href="styles.css">
+        
+          
+        </head>
+        
+        <body>
+            <div class='tasks'>
+            <img src='dp.png'>
+            <div class='task-bd'>
+            <h2>Task List</h2><br>
+          <table class='center'>
+              <tr>
+                <td>
+                TaskID
+                </td>
+                <td>
+                  TaskName
+                </td>
+                <td>
+                  TaskAssign
+                </td>
+                <td>
+                  DueDate
+                </td>
+                <td>
+                  TaskStatus
+                </td>
+                <td>
+                  taskDescription
+                </td>
+              </tr>
+              <% for(var i=0;i<taskDb.length;i++){ %>
+              <tr>
+                <td>
+                  <%= taskDb[i]._id %>
+                </td>
+                <td>
+                  <%= taskDb[i].taskName %>
+                </td>
+                <td>
+                  <%= taskDb[i].taskAssign %>
+                </td>
+                <td>
+                  <%= taskDb[i].dueDate %>
+                </td>
+                <td>
+                  <%= taskDb[i].taskStatus %>
+                </td>
+                <td>
+                  <%= taskDb[i].taskDescription %>
+                </td>
+              </tr>
+              <% }%>
+            </table>
+          
+          <br>
+          
+                  <h3> <a href="/">Home</a> </h3>
+                  <h3> <a href="newtask.html">New Task</a> </h3>
+                  <h3> <a href="updatetask.html">Update Task</a> </h3>
+                  <h3> <a href="deletetask.html">Delete Task</a> </h3>
+                  <h3> <a href="deleteall.html">Delete All Completed Task</a> </h3>
+                </div>
+          </div>
+        </body>
+        
+        </html>
