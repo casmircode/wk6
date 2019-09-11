@@ -17,7 +17,7 @@ app.use(express.static('images'));
 app.use(express.static('css'));
 
 mongoClient.connect(url,{useNewUrlParser: true, useUnifiedTopology:true},function(err,client){
-db = client.db('week5lab6');
+db = client.db('wk6');
 col = db.collection('taskManagement');
 });
 
